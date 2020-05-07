@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	background: rgb(130, 228, 130);
+	font-family: sans-serif;
+	
+}
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80 rem;
+    margin: 0 auto;
+
+
+}
+
+.container h2{
+    text-align: center;
+    justify-content:center;
+
+}
+
+.btn{
+	padding: 10px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #009688;
+	font-size: 20px;
+    color: #fff;
+    border-radius: 50px;
+    margin: 70px 0;
+    
+}

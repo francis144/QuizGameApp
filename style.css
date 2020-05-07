@@ -1,0 +1,145 @@
+body{
+	margin: 0;
+	background: url(bg4.jpg);
+	font-family: sans-serif;
+	
+}
+*{
+	box-sizing: border-box;
+}
+.quiz-container{
+	max-width: 700px;
+	min-height: 500px;
+	background-color: paleturquoise;
+	margin: 30px auto;
+	border-radius: 10px;
+	padding: 30px;
+	
+}
+.quiz-container::after, .quiz-container::before{
+	content: '';
+	clear:both;
+	display: table;
+}
+.question-number,
+.question,
+.options,
+.button,
+{
+}
+.question-number h3{
+	color: #009688;
+	border-bottom:  1px solid #ccc;
+	margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.question {
+	font-size: 22px;
+	color: #000;
+	padding: 15px 0;
+	margin-bottom: 5px;
+	
+	
+}
+.options div{
+	background-color: #cccccc;
+	font-size: 16px;
+	color: #000;
+	padding:  15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.options div.disabled{
+	pointer-events: none;
+}
+.options div.wrong{
+	z-index: 1;
+	color: #fff;
+	
+}
+.options div.wrong::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	z-index: -1;
+	
+}
+
+
+.options div.correct{
+	z-index: 1;
+	color: #fff;
+	
+}
+.options div.correct::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	z-index: -1;
+	
+}
+.button .btn{
+	padding: 12px 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #009688;
+	font-size: 18px;
+	color: #fff;
+	border: none;
+	display: inline-block;
+	margin: 15px 0;
+	
+}
+
+.quiz-over{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(bg4.jpg);
+	z-index: 10;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+.quiz-over.show{
+	display: flex;
+}
+.quiz-over .box{
+	background-color: #21f3de5d;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: center;
+	flex-basis: 700px;
+	max-width: 700px;
+	color: rgb(255, 255, 255);
+	
+}
+
+.quiz-over .box h1{
+	font-size: 36px;
+	margin: 0 0 20px;
+}
+.quiz-over .box button{
+	padding: 15px 50px;
+	border: none;
+	background-color: rgb(0, 128, 122);
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 15px 0 20px;
+	color: rgb(255, 255, 255);
+	
+	
+}
